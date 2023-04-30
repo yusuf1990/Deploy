@@ -1,1 +1,1 @@
-# Deploy
+Deploying celo dApp to Celo Network with web3.py, which enables you to create a trustless decentralized application that can solve real-world problems. We'll focus on creating a seamless user experience and leverage celo's smart contract functionality to write secure and immutable business logic. Python, solidity, Blockchain development, Debugging, Deployment and hosting
