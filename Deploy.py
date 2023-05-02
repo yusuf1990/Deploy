@@ -10,7 +10,6 @@ Original file is located at
 pip install web3
 
 from web3 import Web3, HTTPProvider
-from web3.contract import ConciseContract
 
 # Set up web3 connection to Celo network
 w3 = Web3(Web3.HTTPProvider('https://forno.celo.org'))#Web3(HTTPProvider('https://forno.celo.org'))
@@ -52,6 +51,7 @@ tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 contract_address = tx_receipt.contractAddress
 
 # Create a concise contract instance
+from web3.contract import ConciseContract
 MyContract = ConciseContract(w3.eth.contract(address=contract_address, abi=abi))
 
 # Example function call on the deployed contract
