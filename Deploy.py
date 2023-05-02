@@ -10,6 +10,7 @@ Original file is located at
 pip install web3
 
 from web3 import Web3, HTTPProvider
+from web3.contract import ConciseContract
 
 # Set up web3 connection to Celo network
 w3 = Web3(Web3.HTTPProvider('https://forno.celo.org'))#Web3(HTTPProvider('https://forno.celo.org'))
